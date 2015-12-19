@@ -1,0 +1,5 @@
+alert tcp 172.16.40.134 443 -> 172.16.40.138 any (fragbits:D;ttl:64; msg: “Out Stream“;sid:1000002)
+
+alert tcp 172.16.40.138 any -> 172.16.40.134 443 (fragbits:D;ttl:64; msg: “In Stream“;sid:1000001)
+
+
